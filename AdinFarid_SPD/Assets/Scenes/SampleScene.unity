@@ -1868,6 +1868,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2991749489993002724, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Text
+      value: Collect 11 coins!
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2991749489591808483, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
@@ -13784,6 +13788,29 @@ Transform:
   m_Father: {fileID: 1048482942}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &419518779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2991749489591808480, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+  m_PrefabInstance: {fileID: 1064475002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &419518781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419518779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d0e33f5983a69478c09b41f25c93bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questGiverText: {fileID: 0}
+  textComponent: {fileID: 0}
+  questBeginText: 
+  questCompleteText: Quest Complete!
+  amountToCollect: 11
+  doorToOpenQuestComplete: {fileID: 0}
 --- !u!1 &421750061 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5130097466809597700, guid: d9cdf6065ef0f854693b612546cb9687, type: 3}
@@ -14755,6 +14782,7 @@ GameObject:
   - component: {fileID: 776932607}
   - component: {fileID: 776932608}
   - component: {fileID: 776932610}
+  - component: {fileID: 776932611}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -14944,6 +14972,19 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   audioClip: {fileID: 0}
   hurtVolume: 0
+--- !u!114 &776932611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776932602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 653cd4fe4aa803f46ae611ab227c73ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuestComplete: 0
 --- !u!1 &792946000
 GameObject:
   m_ObjectHideFlags: 0
@@ -16588,6 +16629,116 @@ MonoBehaviour:
   pickupClip: {fileID: 0}
   coinPrefab: {fileID: 1063611762}
   timeBeforeDeletion: 1
+--- !u!1001 &1064475002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1685827742}
+    m_Modifications:
+    - target: {fileID: 2991749489591808480, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Name
+      value: QuestGiver (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808481, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808481, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808481, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92f679980931edb4b8697d2fc36f1a7b, type: 3}
+    - target: {fileID: 2991749489591808481, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808481, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8329776
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808481, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.61089355
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808481, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808481, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808540, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808540, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808540, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489591808540, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991749489993002724, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+      propertyPath: m_Text
+      value: Collect 11 coins!
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2991749489591808483, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
 --- !u!1 &1091794542
 GameObject:
   m_ObjectHideFlags: 0
@@ -20184,6 +20335,34 @@ PrefabInstance:
     - {fileID: 5130097466527227223, guid: d9cdf6065ef0f854693b612546cb9687, type: 3}
     - {fileID: 2493152887448568661, guid: d9cdf6065ef0f854693b612546cb9687, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d9cdf6065ef0f854693b612546cb9687, type: 3}
+--- !u!1 &1685827735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2991749489591808480, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+  m_PrefabInstance: {fileID: 193714075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1685827739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685827735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d0e33f5983a69478c09b41f25c93bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questGiverText: {fileID: 0}
+  textComponent: {fileID: 0}
+  questBeginText: Collect 11 coins
+  questCompleteText: Quest Complete!
+  amountToCollect: 11
+  doorToOpenQuestComplete: {fileID: 0}
+--- !u!4 &1685827742 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2991749489591808482, guid: c95a7eb87b8ab3e4aae9f5f81719e6a3, type: 3}
+  m_PrefabInstance: {fileID: 193714075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1689034829 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5130097466349503200, guid: d9cdf6065ef0f854693b612546cb9687, type: 3}
